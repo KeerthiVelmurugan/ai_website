@@ -125,7 +125,7 @@ function Course() {
               </div>
             </div>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-6 m-8">
               <button onClick={() => scrollToSection('enroll')} className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3.5 rounded-lg font-semibold hover:opacity-90 transition glow-purple">
                 Enroll Now – Start Your Journey
               </button>
@@ -176,8 +176,8 @@ function Course() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-700 rounded-b-lg h-4 mx-[-4px]"></div>
-              <div className="bg-gray-600 h-2 mx-8 rounded-b-lg"></div>
+              {/* <div className="bg-gray-700 rounded-b-lg h-4 mx-[-4px]"></div>
+              <div className="bg-gray-600 h-2 mx-8 rounded-b-lg"></div> */}
             </div>
           </div>
         </div>
