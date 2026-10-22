@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import "./WeatherApp.css";
 
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
@@ -8,6 +8,10 @@ function WeatherApp() {
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  useEffect(() => {
+  document.title = "Weather App | Mini Projects";
+}, []);
 
   const searchWeather = async (event) => {
     event.preventDefault();

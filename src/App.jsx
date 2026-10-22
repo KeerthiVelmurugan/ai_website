@@ -9,6 +9,7 @@ import AgeCalculator from './components/Agecalculator'
 import TodoApp from './components/TodoApp'
 import ExpenseTracker from './components/ExpensiveTracker'
 import WeatherApp from './components/WeatherApp'
+import InvoiceGenerator from './components/InvoiceGenerator'
 
 function App() {
 
@@ -17,11 +18,12 @@ function App() {
     
     <BrowserRouter>
     <Routes>
-      <Route path='/'  element={<BMICalculator />}></Route>
+      <Route path='/'  element={<InvoiceGenerator />}></Route>
       <Route path='/age'  element={<AgeCalculator />}></Route>
       <Route path='/To-do'  element={<TodoApp />}></Route>
       <Route path='/expense'  element={<ExpenseTracker />}></Route>
       <Route path='/weather' element={<WeatherApp />}></Route>
+      <Route path='/bmi' element={<BMICalculator />}></Route>
     </Routes>
     </BrowserRouter>
 

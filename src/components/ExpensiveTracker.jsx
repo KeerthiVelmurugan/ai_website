@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const expenseCategories = [
   "Food",
@@ -18,6 +18,10 @@ export default function ExpenseTracker() {
 
   const [isEditOpen, setIsEditOpen] = useState(false);
   const [editData, setEditData] = useState(null);
+
+  useEffect(() => {
+  document.title = "Expense Tracker | Mini Projects";
+}, []);
 
   // ADD TRANSACTION
   const addTransaction = () => {
